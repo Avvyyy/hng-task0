@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card — Favour Uzochukwu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article data-testid="test-profile-card" class="card">
+        <figure>
+            <img src="https://res.cloudinary.com/dmmf6rh7q/image/upload/Favour_Aachukwu_Uzochukwu_ixfs0t.jpg"
+                alt="Favour Uzochukwu" data-testid="test-user-avatar" />
+        </figure>
+
+        <div class="content">
+            <header>
+                <h2 data-testid="test-user-name">Favour Uzochukwu</h2>
+            </header>
+
+            <p data-testid="test-user-bio">
+                A passionate frontend developer from Nigeria who loves crafting responsive, accessible user interfaces
+                with HTML, CSS, and JavaScript.
+            </p>
+
+            <time data-testid="test-user-time"></time>
+
+            <nav data-testid="test-user-social-links" aria-label="Social media links">
+                <ul>
+                    <li>
+                        <a data-testid="test-user-social-twitter" href="https://twitter.com/avvyyy" target="_blank"
+                            rel="noopener noreferrer">Twitter</a>
+                    </li>
+                    <li>
+                        <a data-testid="test-user-social-github" href="https://github.com/Avvyyy" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                    </li>
+                    <li>
+                        <a data-testid="test-user-social-linkedin" href="https://linkedin.com/in/favour-uzochukwu"
+                            target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Playing keyboard</li>
+                    <li>Mentoring others</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Slow internet</li>
+                    <li>Unclear documentation</li>
+                    <li>Procrastination</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
