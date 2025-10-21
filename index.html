@@ -5,11 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card — Favour Uzochukwu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <article data-testid="test-profile-card" class="card">
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <article data-testid="test-profile-card" class="card profile-card">
         <figure>
             <img src="https://res.cloudinary.com/dmmf6rh7q/image/upload/Favour_Aachukwu_Uzochukwu_ixfs0t.jpg"
                 alt="Favour Uzochukwu" data-testid="test-user-avatar" />
@@ -17,7 +25,7 @@
 
         <div class="content">
             <header>
-                <h2 data-testid="test-user-name">Favour Uzochukwu</h2>
+                <h2 data-testid="test-user-name" class="header-text">Favour Uzochukwu</h2>
             </header>
 
             <p data-testid="test-user-bio">

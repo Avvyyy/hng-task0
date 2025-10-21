@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left, black, rgb(181, 188, 42), black);
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+nav[aria-label="Main navigation"] {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+nav[aria-label="Main navigation"] ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+nav[aria-label="Main navigation"] a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav[aria-label="Main navigation"] a:hover,
+nav[aria-label="Main navigation"] a:focus {
+  background-color: rgb(181, 188, 42);
+  color: black;
+  outline: none;
+}
+
+@media (min-width: 640px) {
+  nav[aria-label="Main navigation"] ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.card {
+  background-color: white;
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+figure {
+  margin: 0;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure img[data-testid="test-user-avatar"] {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-text {
+  font-size: 2rem;
+  color: rgb(181, 188, 42);
+  text-align: center;
+}
+
+p[data-testid="test-user-bio"] {
+  line-height: 1.5;
+}
+
+time[data-testid="test-user-time"] {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav[data-testid="test-user-social-links"] ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav[data-testid="test-user-social-links"] a {
+  color: rgb(181, 188, 42);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav[data-testid="test-user-social-links"] a:hover,
+nav[data-testid="test-user-social-links"] a:focus {
+  color: black;
+  outline: 2px solid rgb(181, 188, 42);
+  outline-offset: 2px;
+}
+
+section ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  line-height: 1.4;
+}
+
+/* Form structure */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(181, 188, 42);
+  box-shadow: 0 0 0 3px rgba(181, 188, 42, 0.4);
+}
+
+/* Error and success messages */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  min-height: 1rem;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: rgb(181, 188, 42);
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: #b5bc2a;
+  outline: none;
+}
+
+/* About Page Styling */
+main.card section {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+main.card section:last-of-type {
+  border-bottom: none;
+}
+
+main.card section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: rgb(181, 188, 42);
+}
+
+main.card section p {
+  line-height: 1.6;
+  font-size: 0.98rem;
+  color: #374151;
+}
+
+@media (min-width: 640px) {
+  .profile-card {
+    flex-direction: row;
+  }
+
+  figure {
+    max-width: 250px;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  main.card {
+    padding: 2rem;
+  }
+
+  main.card section h2 {
+    font-size: 1.4rem;
+  }
+
+  main.card section p {
+    font-size: 1rem;
+  }
+}

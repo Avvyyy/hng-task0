@@ -7,12 +7,13 @@ You can **customize this card** easily to suit your own profile.
 
 ##  Features
 
-- 🧍 Displays **Slack Username**  
-- 🧭 Shows **Track** (e.g., Frontend)  
-- 🕒 Dynamically updates the **current UTC time** every second  
-- 📅 Displays the **current day of the week**  
-- 🖼️ Displays a **profile image**  
-- 🔗 Includes a **GitHub project link**
+-  Shows **Track** (e.g., Frontend)  
+-  Dynamically updates the **current UTC time** every second  
+-  Displays the **current day of the week**  
+-  Displays a **profile image**  
+-  Includes a **GitHub project link**
+- Includes a *Contact Us Page*
+- Includes an * about me pahe*
 
 ---
 
